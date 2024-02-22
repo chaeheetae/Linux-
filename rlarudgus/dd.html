@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<title>command</title>                                      <!-- 1. 제목 수정-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="icon3.ico">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: rgb(82, 80, 80);
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+                                                          /*2. 이미지 수정(가로 이미지 사용) */
+
+.bgimg-1 {
+    background-image: url('/image/book.jpg');
+    min-height: 400px;
+}
+
+                                                        
+.bgimg-2 {
+  background-image: url('/image/book.jpg');
+    min-height: 400px;
+}
+
+                                                      
+.bgimg-3 {
+  background-image: url('/image/book.jpg');
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.w3-padding-large {width : 150px;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>                                                               <!-- 3. 메뉴수정 -->
+    <a href="#home" target="_blank" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#link" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> LINK</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->                                     <!-- 3. 메뉴수정 -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#link" class="w3-bar-item w3-button" onclick="toggleFunction()">LINK</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+                                                                       <!-- 4. 대문 수정 -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <!-- 대문색변경 css 색변경은 아래 링크 들어가서 확인  -->
+       <span class="w3-hide-small"></span>Linux 명령어</span>                               <!--https://www.w3schools.com/w3css/w3css_color_classes.asp-->                            
+  </div>
+</div>
+
+<!-- Container (About Section) -->                                     <!-- 5. 프로필 수정 -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center"></h3>
+  <p class="w3-center"><em>Linux 명령어</em></p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right">기획자 : 김경현</i></b></p><br>
+      
+    </div>
+
+    <!-- Hide this text on small devices -->
+                                                                     
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <p>이번 페이지는</p>
+        <p>명령어의 이름, 하는 일, 예시까지 설명드리는 페이지 입니다.</p>
+        
+    </div>
+  </div>
+ 
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">리툭스명령어</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="link">
+  <h3 class="w3-center">ls</h3>
+  <p class="w3-center"><em>ls명렁어는 파일 목록을 출력하는 명령어 입니다.<br>ls 뒤에 -F옵션을 붙이면 디렉터리 목록도 출력할 수 있습니다.(옵션에 대해 더 깊게 정리한 옵션 페이지가 있습니다.)<br> </em></p><br>
+  <img src="../image/linuxex1.png" style="padding-left: 28%;width:80%">
+  
+
+  
+</div>
+<div class="w3-content w3-container w3-padding-64" id="link">
+  <h3 class="w3-center">pwd</h3>
+  <p class="w3-center"><em>현재 디렉터리를 확인하는 명령어 입니다.<br> </em></p><br>
+  <img src="../image/linuxex2.png" style="padding-left: 28%;width:80%">
+  
+</div>
+<div class="w3-content w3-container w3-padding-64" id="link">
+  <h3 class="w3-center">cd</h3>
+  <p class="w3-center"><em>지정한 디렉터리로 이동시키는 명령어로 cd뒤에 디렉터리를 지정해 이동합니다. <br>이때 명령어와 디렉터리를 스페이스로 구분합니다. <br>cd로 이동시킨 파일은 pwd로 확인할 수 있습니다.<br> </em></p><br>
+  <img src="../image/linuxex3.png" style="padding-left: 28%;width:80%">
+  </div>
+  <div class="w3-content w3-container w3-padding-64" id="link">
+    <h3 class="w3-center">touch</h3>
+    <p class="w3-center"><em>파일을 만드는 명령어 입니다.<br>형테:touch[생성할 파일1][생성할 파일2]<br>touch 명령어는 내용없는 빈 파일을 생성하니 알고 계시면 좋습니다.<br>생성이 되었는지 확인하려면 ls명령어를 이용하시면 됩니다.<br> </em></p><br>
+    <img src="../image/linuxex4.png" style="padding-left: 28%;width:80%">
+  </div>
+  <div class="w3-content w3-container w3-padding-64" id="link">
+    <h3 class="w3-center">mkdir</h3>
+    <p class="w3-center"><em>디렉터리를 만드는 명령어 입니다.<br>형태: mkdir[옵션][작l성할 디렉터리 이름><br>파일과 동일한 미름을 가진 티렉터리는 만들 수 없고, <br>중첩된 디렉터리를 만들 때 중간경로의 디렉터리가 존재하지 않으면 에러가 발생한다는 점 참고해주세요.</bu><br> </em></p><br>
+    <img src="../image/linuxex5.png" style="padding-left: 28%;width:80%">
+  </div>
+  <div class="w3-content w3-container w3-padding-64" id="link">
+    <h3 class="w3-center">rm,rmdir</h3>
+    <p class="w3-center"><em>rm은 파일을 삭제하는 명령어입니다.<br>형태: rm[옵션][삭제할 파일1]...<br> rm에다가 -r옵션을 붙이면 디렉터리를 삭제할 수 도 있습니다 (옵션에 대해 더 깊게 정리한 옵션 페이지가 있습니다.)<br>rmdir 명령어는 빈 디렉토리를 삭제합니다.<br> </em></p><br>
+    <img src="../image/linuxex6.png" style="padding-left: 28%;width:80%">
+  </div>
+
+  <div class="w3-content w3-container w3-padding-64" id="link">
+    <h3 class="w3-center">cat</h3>
+    <p class="w3-center"><em>파일 내용을 출력하는 명령어 입니다.<br>형태: cat[옵션][파일이름] <br>-n 옵션을 지정하면 행 번호가 함께 출력됩니다. (옵션에 대해 더 깊게 정리한 옵션 페이지가 있습니다. <br>파일을 지정하지 않고 cat만 실행되면 커서가 뜨는데 그때 무언갈 입력하면 똑같이 반환됩니다.<br> </em></p><br>
+    <img src="../image/linuxex7.png" style="padding-left: 28%;width:80%">
+  </div>
+
+
+  <div class="w3-content w3-container w3-padding-64" id="link">
+    <h3 class="w3-center">less</h3>
+    <p class="w3-center"><em>cat보다 보기 좋게 출력되며 스크롤 기능도 사용되어 파일 내용을 출력할 수 있습니다.<br>형태:less[옵션][파일이름]<br>q를 누르면 less명령어가 종료됩니다.<br>less로 열려있는 파일에서 문자열을 검색할 수 있습니다. </em></p><br>
+    <img src="../image/linuxex8.png" style="padding-left: 28%;width:80%">
+    <img src="../image/linuxex9.png" style="padding-left: 28%;width:80%">
+    
+  </div>
+
+  <div class="w3-content w3-container w3-padding-64" id="link">
+    <h3 class="w3-center">cp</h3>
+    <p class="w3-center"><em>파일과 디렉터리를 복사하는 명령어 입니다. <br>형태: cp[옵션][복사할 파일][복사할 위치]<br>디렉터리를 복사하려면 -r옵션을 붙여야 하는 것을 참고해주세요 (옵션에 대해 더 깊게 정리한 옵션 페이지가 있습니다.<br> </em></p><br>
+    <img src="../image/linuxex10.png" style="padding-left: 28%;width:80%">
+  </div>
+  <div class="w3-content w3-container w3-padding-64" id="link">
+  <h3 class="w3-center">mv</h3>
+  <p class="w3-center"><em>특정 파일을 특정 디렉터리 안으로 옮길 수 있습니다.<br> 여기서 -i옵션을 지정하면 덮어쓰기전 확일을 할 수도 있습니다. <br>여기선 -r옵션을 사용하지 않아도 디렉터리 안의 모든 파일과 디렉터리를 전부 옮깁니다.<br>mv명령어로는 파일의 이름도 바꿀 수 있습니다.<br> </em></p><br>
+  <img src="../image/linuxex11.png" style="padding-left: 28%;width:80%">
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="link">
+  <h3 class="w3-center">in</h3>
+  <p class="w3-center"><em>링크는 만드는 명령어 입니다.<br>형태: in[옵션][링크할 파일][링크 이름] <br>여기서 링크란 파일에 별명을 붙니는 것입니다.<br>링크는 심볼릭 링크, 하드링크가 있는데 심볼릭 링크만 기억해주시면 될 것 같습니다. <br>심볼릭 링크란 원본 파일에 대한 정보가 담긴 작은 특수 파일이며 하드링크와 달리 원본 복사본 구별이 됩니다.<br>아래는 심볼링 링크 만들기 입니다. (명령어 뒤에 -s 옵션하면 심볼릭 링크가 만들어 집니다.)<br></em></p><br>
+  <img src="../image/linuxex12.png" style="padding-left: 28%;width:80%">
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="link">
+  <h3 class="w3-center">find</h3>
+  <p class="w3-center"><em>디렉터리 트리에서 파일을 찾는 명령어 입니다.<br>형태: find[검색할 디렉터리][검색조건][액션] <br>find는 액션 부분에 아무런 인자도 저장하지 않으면 기본적으로 -print가 지정됩니다.<br></em></p><br>
+  <img src="../image/linuxex13.png" style="padding-left: 28%;width:80%">
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="link">
+  <h3 class="w3-center">locate</h3>
+  <p class="w3-center"><em>데이터 베이스에서 파일을 찾는 명령어 입니다.<br>형태: locate[옵션][검색 패턴]<br>데이터 베이스에서 검색함으로 find보다 빠릅니다.<br>--version옵션을 지정하여 locate을 실행시켜야하고 없다면 설치가 필요합니다. <br></em></p><br>
+  <img src="../image/linuxex14.png" style="padding-left: 28%;width:80%">
+  <img src="../image/linuxex15.png" style="padding-left: 28%;width:80%">
+</div>
+  
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+
+<!-- Container (link Section) -->
+                                                                       
+<div class="w3-content w3-container w3-padding-64" id="link">
+  <h3 class="w3-center">LINK </h3>
+  <p class="w3-center"><em>링크<br> </em></p><br>
+
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <a href="./company.html" target="_blank"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">홈</button></a> <!-- 버튼색이 회색  버튼색을 바꾸려면 ---->
+    <a href="./target.html" target="_blank"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">Gui,Cli</button></a>   <!--https://www.w3schools.com/w3css/w3css_buttons.asp 참고-->
+    <a href="./portfolio.html" target="_blank"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">옵션</button></a>
+    <a href="https://blog.naver.com/sunnycoding" target="_blank"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">셸</button></a>
+    
+  </div>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+                                                                           
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<!-- Add Google Maps -->                                                     
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(37.614853818000526, 126.91812868208692);
+  var mapOptions= {
+    center:myCenter,
+    zoom:15, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcPf9E3ib0x4VS321Hm6Pz4pSxLTzOvrY&callback=myMap"></script>
+
+</body>
+</html>
